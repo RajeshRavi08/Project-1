@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Effective Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align:right;
+        }
+        
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration:none;
+            font-size: 18px;
+            padding:7px 8px;
+        }
+
+        nav ul li a:hover {
+           background-color: #eb7620;
+           transition: 0.5s ease;
+        } 
+        nav ul li .active {
+          background-color: #eb7620;   
+        }
+        .hero {
+            background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url('https://cdn.wallpapersafari.com/80/21/FKMqtj.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 750px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin-bottom: 45px;
+            text-align:center;
+        }
+
+        .hero p {
+            font-size: 25px;
+            margin-bottom: 28px;
+        }
+
+        .cta-button {
+            background-color: #679be9;
+            color: #d7dbe2da;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .hero .btn{
+            color: #fff;
+            padding:12px 25px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: #f15048;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        
+        .features {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+            padding: 0 20px;
+        }
+
+        .feature {
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .feature h2 {
+            color: #ecc8459f;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #161615;
+        }
+
+      
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+       
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                width: 80%;
+                margin-bottom: 30px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <div>
+            <h1>Hearty Welcome</h1>
+            <p>Mobile phones are misnamed.
+            <p>They should be called<br>
+            <p>gateways to human knowledge.</p>
+            <a href=""class="btn">Download Now</a>
+            
+        </div>
+    </section>
+
+    
+    <section class="features">
+        <div class="feature">
+            <img src="https://s3b.cashify.in/gpro/uploads/2022/09/06161722/Latest-Realme-Mobile-Phones-Launched.jpg" alt="Feature 1">
+            <h2>Realme</h2>
+            <p>It's powerful and efficient for your needs.No lag of issues better in quality and quantity</p>
+        </div>
+        <div class="feature">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Q76F3WZWth-pi-j0NjNB4QHaEK&pid=Api&P=0&h=180" alt="Feature 2">
+            <h2>Iphone</h2>
+            <p>This is an advanced solution to solve problems. It is more compact and smart</p>
+        </div>
+        <div class="feature">
+            <img src="https://img.global.news.samsung.com/in/wp-content/uploads/2022/12/14205_Samsung_A04-I-product-shots-and-KV_15-12-2022_3000X2000.jpg" alt="Feature 3">
+            <h2>Samsung</h2>
+            <p>This will boost your efficiency and productivity. </p>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; Thank You </p>
+        <p>&copy;You've made my day</p>
+    </footer>
+
+</body>
+</html>
