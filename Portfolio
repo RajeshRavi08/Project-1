@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" class="checkbox"  id="check">
+            <h1 class= "nav_head">Rajesh.</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="#contact"><button class="contact_btn">Contact Me</button></a>
+            </ul>       
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+
+        <section id="home" class="home">
+            <img src="WhatsApp Image 2025-01-25 at 8.09.38 PM.jpeg" alt="" width="450px" height="400px">
+            <div class="description">
+                <h1>Hello I'm <br><span>Rajesh</span></h1>
+                <h2>I'm a <span>web Developer...</span></h2>
+                
+                <div class="font">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fas fa-phone"></i>   
+                     </div>
+                     <button>Download CV</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about_section">
+                <h1>About <span>Me</span></h1>
+                <h2>Web <span>Developer</span></h2>
+                <p>I am interest in web Development,I have certificate in java and I like to explore more about networks  </p>
+                <button class="about_btn">Read More...</button>
+            </div>
+            <div class="about_photo">
+                <img src="WhatsApp Image 2025-01-25 at 8.09.38 PM.jpeg" alt="" width="420px" height="360px">
+            </div>
+        </section>
+        
+        <section id="skills" >
+             <h1 class="skills_section"> My <span>Skills</span></h1>
+             <div class="card">
+                <div class="skills_card">
+                    <i class="fas fa-computer"></i>
+                    <h2>HTML</h2>
+                    
+                </div>
+                <div class="skills_card">
+                    <i class="fas fa-computer"></i>
+                    <h2 > CSS</h2>
+                    
+                </div>
+                <div class="skills_card">
+                    <i class="fas fa-computer"></i>
+                    <h2>JavaScript</h2>
+                    
+                </div>
+             </div>
+            
+        </section>
+
+        <section id="projects" >
+            <h1 class="projects_section"> My <span>Projects</span></h1>
+            <div class="card">
+               <div class="projects_card">
+                   <i class="fas fa-computer"></i>
+                   <h2>Shop Management System</h2>
+                   <p>The purpose of this project is buying of goods,products service in online.</p>
+                   <a href="#">Read More...</a>
+               </div>
+               <div class="projects_card">
+                   <i class="fas fa-computer"></i>
+                   <h2 >Movie Ticket Booking System</h2>
+                   <p>The purpose of this project is used to booking for movie ticket is easier</p>
+                   <a href="#">Read More...</a>
+               </div>
+            </div>
+               
+           
+       </section>
+
+       <section id="contact" >
+        <div class="form">
+            <h1>Contact <span>Me</span></h1>
+            <center>
+            <form action="#home">
+                <input type="text" name="name"placeholder="Enter Your Name" required=""><br>
+                <input type="email" name="email"placeholder="Enter Your Email" required=""><br>
+                <input type="number" name="mno"placeholder="Enter Your Phone no" required=""><br>
+                <textarea name="msg" id="msg" rows="6" cols="20" placeholder="Enter Your Message"></textarea>
+                <button class="form_btn">Submit</button>
+            </form>
+            </center>
+        </div>
+
+       </section>
+       <div class="footer">
+        <p><i class="fa-solid fa-copyright"></i> Rajesh || All Rights </p>
+       </div>
+          </body>
+</html>
+
+
+
+style.css
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(21,21,21);
+}
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: larger;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav_head{
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+li{
+    display: flex;
+    float:inline-start;
+    overflow: hidden;
+}
+
+li a{
+    padding: 15px;
+    display: block;
+    color: white;
+}
+
+li a:hover{
+    color: aqua;
+}
+
+.contact_btn{
+    padding: 10px 30px;
+    color: black;
+    margin-left: 8rem;
+    background-color: aqua;
+    border-radius: 30px;
+    font-size: large;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.contact_btn:hover{
+    color: white;
+    border: 2px solid aqua;
+    background: transparent;
+}
+
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbox{
+    display: none;
+}
+
+@media screen and(max-width:952px){
+    .nav_head{
+        font-size: 30px;
+    }
+    nav li a{
+        font-size: 18px;
+    }
+    nav .contact_btn{
+        margin-left: 20px;
+    }
+    }
+    @media screen and(max-width:952px){
+        .checkbtn{
+            display: block;
+            margin-left: 150px;
+        }
+        .nav_head{
+            padding-left: 10px;
+        }
+        nav ul{
+            z-index: 1000;
+            position: fixed;
+            width: 60%;
+            height: 50vh;
+            background-color: black;
+            top: 50px; right: -100%;
+            padding: 20px;
+            transition: all .5s;
+        }
+        nav li{
+            text-align: center;
+            display: block;
+            float: left;
+            width: 330px;
+            height: 60px;
+            padding: 5px;
+        }
+        nav .contact_btn{
+            width: 90%;
+            margin-top: 15px;
+        }
+        nav li a{
+            font-size: 20px;
+            color: white;
+        }
+        .checkbox:checked ~ ul{
+            right: 0;
+        }
+}
+
+.home{
+    padding: 220px 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: Srem;
+}
+.description{
+    padding-top: 20px;
+}
+.description h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.description h1 span{
+    color: aqua;
+    font-size: 55px;
+}
+.description h2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.description h2 span{
+    color: aqua;
+    position: relative;
+}
+.description h2 span::after{
+    content: "";
+    position:absolute;
+    left: 0;
+    right: 0px;
+    height: 100%;
+    border-left: 4px solid aqua;
+    background-color: rgb(21,21,21);
+    animation: text 3s infinite backwards steps(10);
+}
+@keyframes text{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+.font i{
+    margin: 25px 8px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    padding: 13px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.font i:hover{
+    background-color: aqua;
+    transform: translate(-15px);
+    box-shadow: 0px 0px 15px aqua;
+}
+.description button{
+    padding: 13px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg,aqua,rgb(231,201,35));
+    cursor: pointer;
+    border: none;
+}
+.home img{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px aqua;
+    filter: brightness(1.1);
+    transition: .4s ease-in-out;
+    animation: animate 2.5s ease-in-out forwards infinite;
+}
+.home img:hover{
+    box-shadow: 0px 0px 50px aqua;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media  screen and(max-width:820px) {
+    .home img{
+    margin-top: -7rem;
+    margin-left: -1rem;
+    margin-bottom: -5rem;
+    width: 390px;
+    height: 340px;
+    }
+    .home{
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    }
+    .description{
+        margin-left: -4rem;
+    }
+    .description h1{
+        font-size: 25px;
+    }
+    .description h1 span{
+        font-size: 40px;
+    }
+    .description h2{
+        font-size: 25px;
+    }
+    .description p{
+        font-size: 15px;
+    }
+}
+
+/*About */
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 150px;
+    gap: 60px;
+    padding-top: 100px;
+    color: white;
+}
+.about_photo img{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px aqua;
+    filter: brightness(1.1);
+    animation: animate1 2,5s ease-in-out forwards infinite ;
+}
+@keyframes animate1{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.about_section{
+    margin-bottom: 30px;
+}
+.about_section h1{
+    font-size: 50px;
+}
+.about_section h2{
+    margin-top: 10px;
+}
+.about_section span{
+    color: aqua;
+}
+.about_section p{
+    margin-top: 15px;
+}
+.about_btn{
+    padding: 13px 25px;
+    font-size: 20px;
+    background-color: aqua;
+    margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px aqua;
+    border: none;
+    cursor: pointer;
+}
+
+@media  screen and(max-width:820px) {
+    .about{
+        display: block;
+        margin-top: -13rem;
+    }
+    .about_section{
+        margin-left: -6rem;
+        width: 470px;
+    }
+    .about_section h1{
+        font-size: 35px;
+    }
+    .about_photo{
+        width: 200px;
+        height: 250px;
+        margin: 50px -70px;
+    }
+    .about_btn{
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    
+}
+
+/* service */
+h1.skills_section{
+    margin-top: 15rem;
+    color: white;
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+h1.skills_section span{
+    color: aqua;
+}
+div.card{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: justify;
+    margin: 70px;
+    color: white;
+}
+.skills_card{
+    background-color: rgb(48,48, 48);
+    padding: 30px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.skills_card:hover{
+    border: 2px solid aqua;
+    background-color: aqua;
+    transform:translateY(-20px)
+}
+.skills_card i{
+    font-size: 40px;
+    color: aqua;
+}
+.skills_card h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.skills_card p{
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.skills_card a{
+    font-size: large;
+    color: aqua;
+}
+
+@media screen and(max-width:820px){
+    h1.skills_section{
+        font-size: 35px;
+        margin-bottom: -40px;
+    }
+    .card{
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+    }
+    .skills_card{
+        margin-top: 20px;
+    }
+    .skills_card h2{
+        font-size: 25px;
+    }
+}
+
+h1.projects_section{
+    margin-top: 15rem;
+    color: white;
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+h1.projects_section span{
+    color: aqua;
+}
+div.card{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: justify;
+    margin: 70px;
+    color: white;
+}
+.projects_card{
+    background-color: rgb(48,48, 48);
+    padding: 30px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.projects_card:hover{
+    border: 2px solid aqua;
+    background-color: aqua;
+    transform:translateY(-20px)
+}
+.projects_card i{
+    font-size: 40px;
+    color: aqua;
+}
+.projects_card h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.projects_card p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.projects_card a{
+    font-size: large;
+    color: aqua;
+}
+
+@media screen and(max-width:820px){
+    h1.projects_section{
+        font-size: 35px;
+        margin-bottom: -40px;
+    }
+    .card{
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+    }
+    .projects_card{
+        margin-top: 20px;
+    }
+    .projects_card h2{
+        font-size: 25px;
+    }
+}
+.form h1{
+    margin: 150px 0px 40px 0px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 80px;
+}
+.form h1 span{
+    color:aqua;
+}
+.form input,textarea{
+    width: 550px;
+    margin:10px 340px;
+    padding: 15px;
+    background-color: rgb(63,63,63);
+    font-size: 18px;
+    color:white;
+    border: none;
+    border-radius: 5px;
+}
+.form .form_btn{
+    padding: 15px 50px;
+    font-size: 20px;
+    background-color: aqua;
+    margin: 1.5rem 33rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px aqua;
+    cursor: pointer;
+    border: none;
+    transition: .3s ease;
+}
+.form .form_btn:hover{
+    background: transparent;
+    border: 2px solid aqua;
+    color: white;
+}
+
+.footer{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+*::selection{
+    background-color: aqua;
+}
+
+@media screen and(max-width:820px){
+    .form h1{
+        font-size: 35px;
+        
+    }
+    .form input,textarea{
+        margin-left: 50px;
+        width: 450px;
+    }
+
+    .form .form_btn{
+        margin-left: 14rem;
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+}
+
